@@ -1,0 +1,24 @@
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
+export PATH=$PATH:$JAVA_HOME/bin
+
+export MAVEN_HOME=/Users/srinipenchikala/dev/big-data-projects/tools/apache-maven-3.3.9
+export PATH=$PATH:$MAVEN_HOME/bin
+
+export SPARK_HOME=/Users/srinipenchikala/dev/big-data-projects/tools/spark-2.2.0-bin-hadoop2.7
+export PATH=$PATH:$SPARK_HOME/bin
+
+export PROJECT_HOME=/Users/srinipenchikala/dev/big-data-projects/spark-workshop/WorkshopLabs/big-data-processing-spark-mini-book
+cd $PROJECT_HOME/01-introduction
+
+$SPARK_HOME/bin/pyspark
+
+//
+// Get Spark version 
+//
+sc.version
+
+//
+// To quit PySpark Shell
+//
+exit()
